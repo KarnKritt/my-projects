@@ -96,7 +96,7 @@ section img#mountains_front {
   position: absolute;
   color: #ffff;
   white-space: nowrap;
-  right: -150px;
+  right: -120px;
   font-size: 7vw;
   z-index: 9;
   pointer-events: none;
