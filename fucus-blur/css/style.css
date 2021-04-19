@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',
+    sans-serif;
+    box-sizing: border-box;
+}
+section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../asset/beautiful-woman-portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+section .blur {
+    filter: blur(10px);
+}
+section .clip {
+    clip-path: circle(150px at var(--x) var(--y));
+}
+section .box h2 {
+    position: absolute;
+    color: #ffff;
+    font-size: 10em;
+    transform: translate(calc(var(--x)/25),calc(var(--y)/25));
+
+}
+.circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px rgba(0,0,0, 0.25);
+    top: -150px;
+    left: -150px;
+    transform: translate(var(--x),var(--y));
+}
