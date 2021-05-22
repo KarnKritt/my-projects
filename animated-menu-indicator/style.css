@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 206, 188);
+}
+
+.box {
+    display: flex;
+    padding: 1em 1.5em;
+    background: #fff;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: fit-content;
+    height: 3em;
+    border-radius: 50px;
+}
+.box li {
+    width: 3em;
+    height: 3em;
+    margin: 0 .5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+}
+.box li h4 {
+    position: relative;
+    margin-bottom: 2em;
+    width: fit-content;
+    background: #fff;
+    padding: .3em .6em;
+    border-radius: 20px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+.box li h4::after{
+    content: '';
+    position: absolute;
+    width: .8em;
+    height: .8em;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: rotate(45deg)
+    translateY(50%);
+}
+
+.box li i {
+    font-size: 1.2em;
+    color: rgb(190, 190, 190);
+}
+.box li:hover i {
+    color: black;
+}
+.box li:hover h4 {
+    transform: translateY(0);
+    opacity: 1;
+}
